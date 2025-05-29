@@ -10,7 +10,7 @@
 .
 <a href="https://scholar.google.com/citations?user=RMSuNFwAAAAJ&hl=en"><strong>Yi Yang</strong></a>
 
-<a href="https://github.com/yuangan/DataStealing"><img src="./figures/intro.png" style="width: 1225px;"></a>
+<a href="https://github.com/yuangan/Silencer"><img src="./figures/intro.png" style="width: 1225px;"></a>
 
 </div>
 <div align="justify">
