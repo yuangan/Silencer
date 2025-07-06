@@ -1,0 +1,17 @@
+attack:
+    epsilon: 16
+    steps: 100
+    input_size: 512
+    mode: sds
+    img_path: celebahq_512
+    output_path: protect/out_celebahq_512/
+    alpha: 1
+    g_mode: "-"
+    use_wandb: False
+    project_name: iclr_mist
+    diff_pgd: [False, 0.2, 'ddim100'] # un-used feature
+    using_target: False
+    target_rate: 5
+    device: 0
+    max_exp_num: 100
+    min_timesteps: 0

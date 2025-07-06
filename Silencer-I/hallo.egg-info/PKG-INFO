@@ -1,0 +1,30 @@
+Metadata-Version: 2.1
+Name: hallo
+Version: 0.1.0
+Home-page: None
+Author: Your Name
+Author-email: you@example.com
+Maintainer: None
+Maintainer-email: None
+Requires-Python: >=3.10,<4.0
+License-File: LICENSE
+Requires-Dist: accelerate==0.28.0
+Requires-Dist: audio-separator<0.18.0,>=0.17.2
+Requires-Dist: av==12.1.0
+Requires-Dist: bitsandbytes==0.43.1
+Requires-Dist: decord==0.6.0
+Requires-Dist: diffusers==0.27.2
+Requires-Dist: einops<0.9.0,>=0.8.0
+Requires-Dist: insightface<0.8.0,>=0.7.3
+Requires-Dist: mediapipe[vision]<0.11.0,>=0.10.14
+Requires-Dist: mlflow==2.13.1
+Requires-Dist: moviepy<2.0.0,>=1.0.3
+Requires-Dist: omegaconf<3.0.0,>=2.3.0
+Requires-Dist: opencv-python<5.0.0.0,>=4.9.0.80
+Requires-Dist: pillow<11.0.0,>=10.3.0
+Requires-Dist: torch==2.2.2
+Requires-Dist: torchvision==0.17.2
+Requires-Dist: transformers==4.39.2
+Requires-Dist: xformers==0.0.25.post1
+
+# Anna face animation
