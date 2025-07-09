@@ -51,7 +51,7 @@ The file
 CUDA_VISIBLE_DEVICES=3 python protect/protect_hallo.py attack.img_path='th1kh/th1kh_imgs_100' \
     attack.output_path='protect/out_th1kh_512/' attack.mode='hallo' attack.g_mode='-' attack.min_timesteps=200
 ```
-### Test protected portraits
+### Test Protected Portraits of Silencer-I
 Refer to [test_hallo_th1kh_hallo-.py]()
 Useage example in [test_hallo_th1kh.sh]():
 ```
