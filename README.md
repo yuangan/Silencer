@@ -35,5 +35,29 @@ pip install -r requirements.txt
 pip install .
 ```
 Download the pretrained models from [hallo](https://github.com/fudan-generative-vision/hallo#-download-pretrained-models).
-Download our preprocessed th1kh dataset from [Yandex](https://disk.yandex.com/d/OLe6c-cjGWiPgw)
+
+Download our preprocessed th1kh dataset from [Yandex](https://disk.yandex.com/d/OLe6c-cjGWiPgw).
+
+The file
+```
+./Silencer-I/
+|-- ...
+|-- pretrained_models/
+|-- th1kh/
+```
+
+### Run Silencer-I
+```
+CUDA_VISIBLE_DEVICES=3 python protect/protect_hallo.py attack.img_path='th1kh/th1kh_imgs_100' \
+    attack.output_path='protect/out_th1kh_512/' attack.mode='hallo' attack.g_mode='-' attack.min_timesteps=200
+```
+### Test protected portraits
+Refer to [test_hallo_th1kh_hallo-.py]()
+Useage example in [test_hallo_th1kh.sh]():
+```
+python test_hallo_th1kh_hallo-.py 0 0 &
+python test_hallo_th1kh_hallo-.py 1 0 &
+python test_hallo_th1kh_hallo-.py 2 0 &
+python test_hallo_th1kh_hallo-.py 3 0 &
+```
 
