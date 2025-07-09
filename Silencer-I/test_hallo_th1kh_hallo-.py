@@ -5,10 +5,10 @@ from tqdm import tqdm
 
 prefix = int(sys.argv[2])
 
-allfolders = glob(f'./protect/out_th1kh_512_ttt2/*_200')
+allfolders = glob(f'./protect/out_th1kh_512/*_200')
 allimgs = glob(allfolders[prefix]+'/th1kh_imgs_100/*')
 baselinename = os.path.basename(allfolders[prefix])
-outpath = f'./talking_output/th1kh_base_{baselinename}_ttt2/'
+outpath = f'./talking_output/th1kh_base_{baselinename}/'
 os.makedirs(outpath, exist_ok=True)
 print('outpath: ', outpath)
 
