@@ -31,3 +31,7 @@ isort==5.13.2
 pylint==3.2.2
 pre-commit==3.7.1
 gradio==4.36.1
+hydra-core==1.3.2
+colorama==0.4.6
+advertorch@git+https://github.com/BorealisAI/advertorch.git
+huggingface_hub==0.23.4
