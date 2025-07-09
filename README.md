@@ -38,12 +38,14 @@ Download the pretrained models from [hallo](https://github.com/fudan-generative-
 
 Download our preprocessed th1kh dataset from [Yandex](https://disk.yandex.com/d/OLe6c-cjGWiPgw).
 
-The file
+These files should be organized as follows:
 ```
 ./Silencer-I/
 |-- ...
 |-- pretrained_models/
+|   |-- ...
 |-- th1kh/
+|   |-- ...
 ```
 
 ### Run Silencer-I
