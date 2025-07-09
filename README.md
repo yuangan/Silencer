@@ -34,4 +34,6 @@ conda activate silencer
 pip install -r requirements.txt
 pip install .
 ```
+Download the pretrained models from [hallo](https://github.com/fudan-generative-vision/hallo#-download-pretrained-models).
+Download our preprocessed th1kh dataset from [Yandex](https://disk.yandex.com/d/OLe6c-cjGWiPgw)
 
