@@ -54,8 +54,8 @@ CUDA_VISIBLE_DEVICES=3 python protect/protect_hallo.py attack.img_path='th1kh/th
     attack.output_path='protect/out_th1kh_512/' attack.mode='hallo' attack.g_mode='-' attack.min_timesteps=200
 ```
 ### Test Protected Portraits of Silencer-I
-Refer to [test_hallo_th1kh_hallo-.py]()
-Useage example in [test_hallo_th1kh.sh]():
+Refer to [test_hallo_th1kh_hallo-.py](https://github.com/yuangan/Silencer/blob/main/Silencer-I/test_hallo_th1kh_hallo-.py)
+Useage example in [test_hallo_th1kh.sh](https://github.com/yuangan/Silencer/blob/main/Silencer-I/test_hallo_th1kh.sh):
 ```
 python test_hallo_th1kh_hallo-.py 0 0 &
 python test_hallo_th1kh_hallo-.py 1 0 &
