@@ -35,7 +35,7 @@ pip install .
 ```
 Download the pretrained models from [hallo](https://github.com/fudan-generative-vision/hallo#-download-pretrained-models).
 
-Download our preprocessed Celeb-HQ and TH1KH dataset from [Yandex](https://disk.yandex.com/d/OLe6c-cjGWiPgw).
+Download our preprocessed Celeb-HQ and TH1KH datasets from [Yandex](https://disk.yandex.com/d/OLe6c-cjGWiPgw).
 
 These files should be organized as follows:
 ```
