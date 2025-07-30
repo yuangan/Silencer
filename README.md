@@ -50,6 +50,7 @@ These files should be organized as follows:
 ```
 
 ### Run Silencer-I
+In ```Silencer-I```, you can run the following command to proactively protect images in CelebA-HQ and TH1KH datasets.
 ```
 CUDA_VISIBLE_DEVICES=0 python protect/protect_hallo.py attack.img_path='celebahq_512_dataset/celebahq_512' \
     attack.output_path='protect/out_celebahq_512/' attack.mode='hallo' attack.g_mode='-' \
@@ -60,9 +61,11 @@ CUDA_VISIBLE_DEVICES=0 python protect/protect_hallo.py attack.img_path='th1kh/th
     attack.min_timesteps=200
 ```
 ### Test Protected Portraits of Silencer-I
-Refer to [test_hallo_th1kh_hallo-.py](https://github.com/yuangan/Silencer/blob/main/Silencer-I/test_hallo_th1kh_hallo-.py).
+Refer to [test_hallo_celebahq_hallo-.py](https://github.com/yuangan/Silencer/blob/main/Silencer-I/test_hallo_celebahq_hallo-.py) and [test_hallo_th1kh_hallo-.py](https://github.com/yuangan/Silencer/blob/main/Silencer-I/test_hallo_th1kh_hallo-.py).
 
-Useage examples are in [test_hallo_th1kh.sh](https://github.com/yuangan/Silencer/blob/main/Silencer-I/test_hallo_th1kh.sh):
+Useage examples are in [test_hallo_celebahq.sh](https://github.com/yuangan/Silencer/blob/main/Silencer-I/test_hallo_th1kh.sh) and [test_hallo_th1kh.sh](https://github.com/yuangan/Silencer/blob/main/Silencer-I/test_hallo_th1kh.sh):
+
+For example:
 ```
 python test_hallo_th1kh_hallo-.py 0 0 &
 python test_hallo_th1kh_hallo-.py 1 0 &
