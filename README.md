@@ -19,7 +19,7 @@
 
 ## TODO:
 - [X] Release the code of Silencer-I.
-- [ ] Release the metrics of Silencer.
+- [ ] Release the evaluation code of Silencer.
 - [ ] Release the code of Silencer-II.
 
 ## Silencer-I
