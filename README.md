@@ -51,6 +51,10 @@ These files should be organized as follows:
 
 ### Run Silencer-I
 ```
+CUDA_VISIBLE_DEVICES=2 python protect/protect_hallo.py attack.img_path='celebahq_512_dataset/celebahq_512' \
+    attack.output_path='protect/out_celebahq_512/' attack.mode='hallo' attack.g_mode='-' \
+    attack.min_timesteps=200
+
 CUDA_VISIBLE_DEVICES=3 python protect/protect_hallo.py attack.img_path='th1kh/th1kh_imgs_100' \
     attack.output_path='protect/out_th1kh_512/' attack.mode='hallo' attack.g_mode='-' \
     attack.min_timesteps=200
