@@ -22,7 +22,7 @@
 - [ ] Release the metrics of Silencer.
 - [ ] Release the code of Silencer-II.
 
-## Silencer-I Setup & Preparation
+## Silencer-I
 
 ### Environment Setup
 
