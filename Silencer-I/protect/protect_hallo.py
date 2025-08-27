@@ -502,7 +502,7 @@ class HalloNet(nn.Module):
         # self.net = self.accelerator.prepare(self.net)
 
         self.tensor_result = [] # save temp reuslts for motion
-        self.audio_emb = torch.load('/home/gy/code/talking-head/hallo/th1kh/th1kh_tmp/audio_emb/0001.pt')
+        self.audio_emb = torch.load('./hallo/th1kh/th1kh_tmp/audio_emb/0001.pt')
         # self.audio_emb = torch.load('/home/gy/code/talking-head/hallo/celebahq_512_dataset/supercool/audio_emb/0002.pt')
         self.audio_emb = process_audio_emb(self.audio_emb)
         self.clip_length = 1
@@ -1266,15 +1266,17 @@ def init(epsilon: int = 16, steps: int = 100, alpha: int = 1,
     """
     if mode == 'refnet':
         print(' Define refnet model...')
-        model = HalloRefNet('/home/gy/code/talking-head/hallo/configs/train/stage2.yaml')
+        model = HalloRefNet('./hallo/configs/train/stage2.yaml')
         net = target_model_refnet(model, input_prompt, mode=mode, rate=rate, g_mode=g_mode)
 
     elif mode == 'hallo':
         print(' Define hallo model...')
-        model = HalloNet('/home/gy/code/talking-head/hallo/configs/train/stage2.yaml', min_timesteps=min_ts)
+        model = HalloNet('./hallo/configs/train/stage2.yaml', min_timesteps=min_ts)
         net = target_model_hallo(model, input_prompt, mode=mode, rate=rate, g_mode=g_mode)
 
     else:
+        print('unused currently.')
+        assert(0)
         if ckpt is None:
             ckpt = '/home/gy/code/protect/Adversarial_Content_Attack/ckpt/model.ckpt'
 
