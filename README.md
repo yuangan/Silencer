@@ -19,7 +19,6 @@
 
 ## TODO:
 - [X] Release the code of Silencer-I.
-- [ ] Release the evaluation code of Silencer.
 - [ ] Release the code of Silencer-II.
 
 ## Silencer-I
@@ -76,6 +75,10 @@ python test_hallo_th1kh_hallo-.py 3 0 &
 ## Evaluation
 
 Please refer to the evaluation code of EAT [here](https://github.com/yuangan/evaluation_eat).
+
+1. Generate ground truth videos with original portraits and hallo model.
+2. Generate ground truth for evaluation with GT videos.
+3. Evaluate the generated videos with protected portraits.
 
 ## Silencer-II
 
