@@ -9,15 +9,15 @@ data:
   n_sample_frames: 14
   audio_margin: 2
   train_meta_paths:
-    - "/home/gy/code/talking-head/hallo/data/th1kh_stage2.json"
+    - "./data/th1kh_stage2.json"
 
 wav2vec_config:
   audio_type: "vocals" # audio vocals
   model_scale: "base" # base large
   features: "all" # last avg all
-  model_path: /home/gy/code/talking-head/hallo/pretrained_models/wav2vec/wav2vec2-base-960h
+  model_path: ./pretrained_models/wav2vec/wav2vec2-base-960h
 audio_separator:
-  model_path: /home/gy/code/talking-head/hallo/pretrained_models/audio_separator/Kim_Vocal_2.onnx
+  model_path: ./pretrained_models/audio_separator/Kim_Vocal_2.onnx
 face_expand_ratio: 1.2
 
 solver:
@@ -85,11 +85,11 @@ trainable_para:
   - audio_modules
   - motion_modules
 
-base_model_path: "/home/gy/code/talking-head/hallo/pretrained_models/stable-diffusion-v1-5/"
-vae_model_path: "/home/gy/code/talking-head/hallo/pretrained_models/sd-vae-ft-mse"
-face_analysis_model_path: "/home/gy/code/talking-head/hallo/pretrained_models/face_analysis"
-motion_module_path: "/home/gy/code/talking-head/hallo/pretrained_models/motion_module/mm_sd_v15_v2.ckpt"
-audio_ckpt_dir: /home/gy/code/talking-head/hallo/pretrained_models/hallo
+base_model_path: "./pretrained_models/stable-diffusion-v1-5/"
+vae_model_path: "./pretrained_models/sd-vae-ft-mse"
+face_analysis_model_path: "./pretrained_models/face_analysis"
+motion_module_path: "./pretrained_models/motion_module/mm_sd_v15_v2.ckpt"
+audio_ckpt_dir: ./pretrained_models/hallo
 
 weight_dtype: "fp16" # [fp16, fp32]
 uncond_img_ratio: 0.05
@@ -99,7 +99,7 @@ start_ratio: 0.05
 noise_offset: 0.05
 snr_gamma: 5.0
 enable_zero_snr: True
-stage1_ckpt_dir: "/home/gy/code/talking-head/hallo/exp_output/stage1/"
+stage1_ckpt_dir: "./exp_output/stage1/"
 
 single_inference_times: 10
 inference_steps: 40
@@ -109,7 +109,7 @@ seed: 42
 resume_from_checkpoint: "latest"
 checkpointing_steps: 500
 exp_name: "stage2"
-output_dir: "/home/gy/code/talking-head/hallo/exp_output"
+output_dir: "./exp_output"
 
 ref_img_path:
   - "examples/reference_images/1.jpg"

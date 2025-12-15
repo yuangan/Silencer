@@ -19,26 +19,26 @@ data:
 inference_steps: 40
 cfg_scale: 3.5
 
-audio_ckpt_dir: /home/gy/code/talking-head/hallo/pretrained_models/hallo
+audio_ckpt_dir: ./pretrained_models/hallo
 
-base_model_path: /home/gy/code/talking-head/hallo/pretrained_models/stable-diffusion-v1-5
+base_model_path: ./pretrained_models/stable-diffusion-v1-5
 
-motion_module_path: /home/gy/code/talking-head/hallo/pretrained_models/motion_module/mm_sd_v15_v2.ckpt
+motion_module_path: ./pretrained_models/motion_module/mm_sd_v15_v2.ckpt
 
 face_analysis:
-  model_path: /home/gy/code/talking-head/hallo/pretrained_models/face_analysis
+  model_path: ./pretrained_models/face_analysis
 
 wav2vec:
-  model_path: /home/gy/code/talking-head/hallo/pretrained_models/wav2vec/wav2vec2-base-960h
+  model_path: ./pretrained_models/wav2vec/wav2vec2-base-960h
   features: all
 
 audio_separator:
-  model_path: /home/gy/code/talking-head/hallo/pretrained_models/audio_separator/Kim_Vocal_2.onnx
+  model_path: ./pretrained_models/audio_separator/Kim_Vocal_2.onnx
 
 vae:
-  model_path: /home/gy/code/talking-head/hallo/pretrained_models/sd-vae-ft-mse
+  model_path: ./pretrained_models/sd-vae-ft-mse
 
-save_path: /home/gy/code/talking-head/hallo/.cache
+save_path: ./.cache
 
 face_expand_ratio: 1.2
 pose_weight: 1.0

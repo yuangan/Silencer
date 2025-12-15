@@ -502,8 +502,8 @@ class HalloNet(nn.Module):
         # self.net = self.accelerator.prepare(self.net)
 
         self.tensor_result = [] # save temp reuslts for motion
-        self.audio_emb = torch.load('./hallo/th1kh/th1kh_tmp/audio_emb/0001.pt')
-        # self.audio_emb = torch.load('/home/gy/code/talking-head/hallo/celebahq_512_dataset/supercool/audio_emb/0002.pt')
+        self.audio_emb = torch.load('./th1kh/th1kh_tmp/audio_emb/0001.pt')
+        # self.audio_emb = torch.load('./celebahq_512_dataset/supercool/audio_emb/0002.pt')
         self.audio_emb = process_audio_emb(self.audio_emb)
         self.clip_length = 1
         self.min_timesteps = min_timesteps
@@ -1281,7 +1281,7 @@ def init(epsilon: int = 16, steps: int = 100, alpha: int = 1,
             ckpt = '/home/gy/code/protect/Adversarial_Content_Attack/ckpt/model.ckpt'
 
         if base is None:
-            base = '/home/gy/code/talking-head/hallo/protect/configs/stable-diffusion/v1-inference-attack.yaml'
+            base = './protect/configs/stable-diffusion/v1-inference-attack.yaml'
 
         imagenet_templates_small_style = ['a painting']
         

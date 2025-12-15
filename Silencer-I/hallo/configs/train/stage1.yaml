@@ -3,7 +3,7 @@ data:
   train_width: 512
   train_height: 512
   meta_paths:
-    - "/home/gy/code/talking-head/hallo/data/th1kh_stage1.json"
+    - "./data/th1kh_stage1.json"
   # Margin of frame indexes between ref and tgt images
   sample_margin: 30
 
@@ -38,9 +38,9 @@ noise_scheduler_kwargs:
   steps_offset: 1
   clip_sample: false
 
-base_model_path: "/home/gy/code/talking-head/hallo/pretrained_models/stable-diffusion-v1-5/"
-vae_model_path: "/home/gy/code/talking-head/hallo/pretrained_models/sd-vae-ft-mse"
-face_analysis_model_path: "/home/gy/code/talking-head/hallo/pretrained_models/face_analysis"
+base_model_path: "./pretrained_models/stable-diffusion-v1-5/"
+vae_model_path: "./pretrained_models/sd-vae-ft-mse"
+face_analysis_model_path: "./pretrained_models/face_analysis"
 
 weight_dtype: "fp16" # [fp16, fp32]
 uncond_ratio: 0.1
@@ -53,7 +53,7 @@ seed: 42
 resume_from_checkpoint: "latest"
 checkpointing_steps: 500
 exp_name: "stage1"
-output_dir: "/home/gy/code/talking-head/hallo/exp_output"
+output_dir: "./exp_output"
 
 ref_image_paths:
   - "examples/reference_images/1.jpg"
