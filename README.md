@@ -74,7 +74,7 @@ python test_hallo_th1kh_hallo-.py 3 0 &
 
 ## Evaluation
 
-Please refer to the evaluation code of EAT [here](https://github.com/yuangan/evaluation_eat).
+Please refer to the LRW evaluation process of EAT [here](https://github.com/yuangan/evaluation_eat#evaluation-instructions).
 
 1. Generate ground truth videos with original portraits and hallo model.
 2. Generate ground truth for evaluation with GT videos.
