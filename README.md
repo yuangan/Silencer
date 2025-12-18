@@ -91,6 +91,16 @@ Please refer to the LRW evaluation process of EAT [here](https://github.com/yuan
 
 ## Citation
 
+```
+@inproceedings{gan2025silence,
+  title={Silence is Golden: Leveraging Adversarial Examples to Nullify Audio Control in LDM-based Talking-Head Generation},
+  author={Gan, Yuan and Miao, Jiaxu and Wang, Yunze and Yang, Yi},
+  booktitle={Proceedings of the Computer Vision and Pattern Recognition Conference},
+  pages={13434--13444},
+  year={2025}
+}
+```
+
 ## Acknowledgement
 
 
