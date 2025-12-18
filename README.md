@@ -43,7 +43,7 @@ These files should be organized as follows:
 |   |-- ...
 ```
 
-Change the path of ```pretrained_models``` into your own absolute path. Then install Hallo by executing the following command in ```Silencer-I```.
+Change the path of ```pretrained_models``` into your own absolute path in ```./Silencer-I/build/lib/hallo/utils/util.py``` and ```./Silencer-I/configs/train/stage2.yaml```. Then install Hallo by executing the following command in ```Silencer-I```.
 
 ```
 pip install .
