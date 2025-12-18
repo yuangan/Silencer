@@ -42,14 +42,14 @@
 # python test_hallo_th1kh_baseline.py 2 6 &
 # python test_hallo_th1kh_baseline.py 3 6 &
 
-python test_hallo_th1kh_hallo-.py 0 0 &
-python test_hallo_th1kh_hallo-.py 1 0 &
-python test_hallo_th1kh_hallo-.py 2 0 &
-python test_hallo_th1kh_hallo-.py 3 0 &
+# python test_hallo_th1kh_hallo-.py 0 0 &
+# python test_hallo_th1kh_hallo-.py 1 0 &
+# python test_hallo_th1kh_hallo-.py 2 0 &
+# python test_hallo_th1kh_hallo-.py 3 0 &
 
-# python test_hallo_th1kh_diff_hallo-.py 0 0 &
-# python test_hallo_th1kh_diff_hallo-.py 1 0 &
-# python test_hallo_th1kh_diff_hallo-.py 2 0 &
-# python test_hallo_th1kh_diff_hallo-.py 3 0 &
+python test_hallo_th1kh_diff_hallo-.py 0 0 &
+python test_hallo_th1kh_diff_hallo-.py 1 0 &
+python test_hallo_th1kh_diff_hallo-.py 2 0 &
+python test_hallo_th1kh_diff_hallo-.py 3 0 &
 
 -

@@ -15,9 +15,9 @@ wav2vec_config:
   audio_type: "vocals" # audio vocals
   model_scale: "base" # base large
   features: "all" # last avg all
-  model_path: ./pretrained_models/wav2vec/wav2vec2-base-960h
+  model_path: /home/mil/y-gan/Silencer/Silencer/Silencer-I/pretrained_models/wav2vec/wav2vec2-base-960h
 audio_separator:
-  model_path: ./pretrained_models/audio_separator/Kim_Vocal_2.onnx
+  model_path: /home/mil/y-gan/Silencer/Silencer/Silencer-I/pretrained_models/audio_separator/Kim_Vocal_2.onnx
 face_expand_ratio: 1.2
 
 solver:
@@ -85,10 +85,12 @@ trainable_para:
   - audio_modules
   - motion_modules
 
-base_model_path: "./pretrained_models/stable-diffusion-v1-5/"
-vae_model_path: "./pretrained_models/sd-vae-ft-mse"
-face_analysis_model_path: "./pretrained_models/face_analysis"
-mm_path: "./pretrained_models/motion_module/mm_sd_v15_v2.ckpt"
+base_model_path: "/home/mil/y-gan/Silencer/Silencer/Silencer-I/pretrained_models/stable-diffusion-v1-5/"
+vae_model_path: "/home/mil/y-gan/Silencer/Silencer/Silencer-I/pretrained_models/sd-vae-ft-mse"
+face_analysis_model_path: "/home/mil/y-gan/Silencer/Silencer/Silencer-I/pretrained_models/face_analysis"
+motion_module_path: "/home/mil/y-gan/Silencer/Silencer/Silencer-I/pretrained_models/motion_module/mm_sd_v15_v2.ckpt"
+audio_ckpt_dir: "/home/mil/y-gan/Silencer/Silencer/Silencer-I/pretrained_models/hallo"
+
 
 weight_dtype: "fp16" # [fp16, fp32]
 uncond_img_ratio: 0.05

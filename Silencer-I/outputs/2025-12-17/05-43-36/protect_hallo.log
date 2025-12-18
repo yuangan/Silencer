@@ -1,0 +1,10 @@
+[2025-12-17 05:43:37,319][py.warnings][WARNING] - /home/mil/y-gan/.pyenv/versions/mambaforge-23.11.0-0/envs/hallo_aca/lib/python3.10/site-packages/diffusers/models/lora.py:306: FutureWarning: `LoRACompatibleConv` is deprecated and will be removed in version 1.0.0. Use of `LoRACompatibleConv` is deprecated. Please switch to PEFT backend by installing PEFT: `pip install peft`.
+  deprecate("LoRACompatibleConv", "1.0.0", deprecation_message)
+
+[2025-12-17 05:43:38,150][hallo.models.unet_3d][INFO] - loaded temporal unet's pretrained weights from pretrained_models/stable-diffusion-v1-5/unet ...
+[2025-12-17 05:43:38,150][hallo.models.unet_3d][INFO] - ==========================================================
+[2025-12-17 05:43:52,402][hallo.models.unet_3d][INFO] - Loaded 453.20928M-parameter motion module
+[2025-12-17 05:44:03,657][py.warnings][WARNING] - /home/mil/y-gan/.pyenv/versions/mambaforge-23.11.0-0/envs/hallo_aca/lib/python3.10/site-packages/insightface/utils/transform.py:68: FutureWarning: `rcond` parameter will change to the default of machine precision times ``max(M, N)`` where M and N are the input matrix dimensions.
+To use the future default and silence this warning we advise to pass `rcond=None`, to keep using the old, explicitly pass `rcond=-1`.
+  P = np.linalg.lstsq(X_homo, Y)[0].T # Affine matrix. 3 x 4
+
