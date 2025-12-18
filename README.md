@@ -30,7 +30,6 @@ cd Silencer-I
 conda create -n silencer python=3.10
 conda activate silencer
 pip install -r requirements.txt
-pip install .
 ```
 Download the pretrained models from [hallo](https://github.com/fudan-generative-vision/hallo#-download-pretrained-models).
 
@@ -47,6 +46,14 @@ These files should be organized as follows:
 |-- celebahq_512_dataset/
 |   |-- ...
 ```
+
+Change the path of ```pretrained_models``` into your own absolute path. And then install hallo.
+
+```
+pip install .
+```
+
+PS: It may change the version of protobuf, and you should keep the protobuf==3.20.3 with ```pip install protobuf==3.20.3```.
 
 ### Run Silencer-I
 In ```Silencer-I```, you can run the following command to proactively protect images in CelebA-HQ and TH1KH datasets.
