@@ -47,7 +47,7 @@ These files should be organized as follows:
 |   |-- ...
 ```
 
-Change the path of ```pretrained_models``` into your own absolute path. Then install hallo by excuting the following command in ```Silencer-I```.
+Change the path of ```pretrained_models``` into your own absolute path. Then install Hallo by executing the following command in ```Silencer-I```.
 
 ```
 pip install .
@@ -83,7 +83,7 @@ python test_hallo_th1kh_hallo-.py 3 0 &
 
 Please refer to the LRW evaluation process of EAT [here](https://github.com/yuangan/evaluation_eat#evaluation-instructions).
 
-1. Generate ground truth videos with original portraits and hallo model.
+1. Generate ground truth videos with original portraits and the hallo model.
 2. Generate ground truth for evaluation with GT videos.
 3. Evaluate the generated videos with protected portraits.
 
@@ -91,9 +91,9 @@ Please refer to the LRW evaluation process of EAT [here](https://github.com/yuan
 
 ### Environment Setup
 
-Based on silencer, you need install additional packages from [DiffAttack](https://github.com/WindVChen/DiffAttack).
+Based on the silencer, you need to install additional packages from [DiffAttack](https://github.com/WindVChen/DiffAttack).
 
-You can refer to my environment [here](https://drive.google.com/file/d/1roSLMaeerhI_Wu-wc34s0n9lL6G4BzKN/view?usp=sharing). Untar the file into the ```envs```folder of conda/mamba, then install hallo and protobuf.
+You can refer to my environment [here](https://drive.google.com/file/d/1roSLMaeerhI_Wu-wc34s0n9lL6G4BzKN/view?usp=sharing). Untar the file into the ```envs``` folder of conda/mamba, then install hallo and protobuf.
 
 Download the attack code from [here](https://drive.google.com/file/d/1eYNMZXpthsLbkNR4y7AQqLXRb4PFD0-R/view?usp=sharing) and untar it into Silencer-II.
 
@@ -126,7 +126,7 @@ CUDA_VISIBLE_DEVICES=0 FORCE_MEM_EFFICIENT_ATTN=1 python  main_hallo_attnloss.py
 ### Test Protected Portraits of Silencer-II
 Refer to [test_hallo_celebahq_diff_hallo-.py](https://github.com/yuangan/Silencer/blob/main/Silencer-I/test_hallo_celebahq_diff_hallo-.py) and [test_hallo_th1kh_diff_hallo-.py](https://github.com/yuangan/Silencer/blob/main/Silencer-I/test_hallo_th1kh_diff_hallo-.py).
 
-Useage examples are the same with Silencer-I:
+Usage examples are the same as Silencer-I:
 
 ```
 python test_hallo_th1kh_diff_hallo-.py 0 0 &
@@ -146,5 +146,5 @@ If you find our work useful, please cite it as follows:
 ```
 
 ## Acknowledgement
-
+We acknowledge these works for their public code: [Diff-Protect](https://github.com/xavihart/Diff-Protect), [DiffAttack](https://github.com/WindVChen/DiffAttack), [](), and so on.
 
