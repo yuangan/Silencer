@@ -49,7 +49,7 @@ Change the path of ```pretrained_models``` into your own absolute path in ```./S
 pip install .
 ```
 
-PS: It may change the version of protobuf, and you should keep the protobuf==3.20.3 with ```pip install protobuf==3.20.3```.
+PS: It may change the version of protobuf. You need to keep the protobuf==3.20.3 with ```pip install protobuf==3.20.3```.
 
 ### Run Silencer-I
 In ```Silencer-I```, you can run the following command to proactively protect images in CelebA-HQ and TH1KH datasets.
