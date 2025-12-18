@@ -89,6 +89,29 @@ Please refer to the LRW evaluation process of EAT [here](https://github.com/yuan
 
 ## Silencer-II
 
+### Environment Setup
+
+Based on silencer, you need install additional packages from (DiffAttack)[https://github.com/WindVChen/DiffAttack].
+
+You can refer to my environment (here)[]. Untar the file into the ```envs```folder of conda/mamba, then install hallo and protobuf.
+
+Download the code from (here)[https://drive.google.com/file/d/1eYNMZXpthsLbkNR4y7AQqLXRb4PFD0-R/view?usp=sharing] and untar it into Silencer-II.
+
+### Run Silencer-II
+
+In ```Silencer-II/DiffAttack```, you can run the following command to proactively protect images in CelebA-HQ and TH1KH datasets.
+
+```
+CUDA_VISIBLE_DEVICES=0 FORCE_MEM_EFFICIENT_ATTN=1 python  main_hallo_attnloss.py --model_name resnet \
+    --save_dir ./adv_out/th1kh_adamw_iter200_1e-2_hallo1_512_19_+mse_t200_s100_fmask_10_100_20251217   \
+    --images_root ../../Silencer-I/th1kh/th1kh_imgs_100/ --attack_mode 'hallo' --g_mode '-'\
+    --res 512 --iterations 200   --attack_loss_weight 1 --attack_mse_loss_weight 10  \
+    --cross_attn_loss_weight 0 --self_attn_loss_weight 0 --start_step 19 \
+    --dataset_name th1kh --use_face_mask 1 \
+    --index_use_face_mask 100 --part [0-3]
+```
+
+
 ## Citation
 If you find our work useful, please cite it as follows:
 
