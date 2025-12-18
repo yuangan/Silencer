@@ -47,7 +47,7 @@ These files should be organized as follows:
 |   |-- ...
 ```
 
-Change the path of ```pretrained_models``` into your own absolute path. Then install hallo by excuting the following command in folder ```Silencer-I```.
+Change the path of ```pretrained_models``` into your own absolute path. Then install hallo by excuting the following command in ```Silencer-I```.
 
 ```
 pip install .
