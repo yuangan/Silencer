@@ -146,5 +146,5 @@ If you find our work useful, please cite it as follows:
 ```
 
 ## Acknowledgement
-We acknowledge these works for their public code: [Diff-Protect](https://github.com/xavihart/Diff-Protect), [DiffAttack](https://github.com/WindVChen/DiffAttack), [](), and so on.
+We acknowledge these works for their public code: [Diff-Protect](https://github.com/xavihart/Diff-Protect), [DiffAttack](https://github.com/WindVChen/DiffAttack), [Hallo](https://github.com/fudan-generative-vision/hallo), and so on.
 
