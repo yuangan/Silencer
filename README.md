@@ -90,6 +90,7 @@ Please refer to the LRW evaluation process of EAT [here](https://github.com/yuan
 ## Silencer-II
 
 ## Citation
+If you find our work useful, please cite it as follows:
 
 ```
 @inproceedings{gan2025silence,
