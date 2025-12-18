@@ -130,6 +130,9 @@ Usage examples are the same as Silencer-I:
 
 ```
 python test_hallo_th1kh_diff_hallo-.py 0 0 &
+python test_hallo_th1kh_diff_hallo-.py 1 0 &
+python test_hallo_th1kh_diff_hallo-.py 2 0 &
+python test_hallo_th1kh_diff_hallo-.py 3 0 &
 ```
 
 ## Citation
